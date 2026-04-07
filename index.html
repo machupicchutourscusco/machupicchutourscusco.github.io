@@ -11,68 +11,139 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-body { margin:0; font-family:'Poppins',sans-serif; background:#f8f9fa; color:#333; }
-a {
-  text-decoration: none;
-  color: inherit;
+
+body {
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#f8f9fa;
+  color:#333;
 }
 
-a:hover {
-  opacity: 0.8;
+/* LINKS */
+a {
+  text-decoration:none;
+  color:inherit;
 }
+
+/* HERO */
 .hero {
   height:100vh;
-  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),
   url('https://images.unsplash.com/photo-1526392060635-9d6019884377');
   background-size:cover;
   background-position:center;
-  display:flex; align-items:center; justify-content:center;
-  text-align:center; color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
 }
-.hero h1 { font-size:42px; margin-bottom:15px; }
-.hero p { font-size:20px; margin-bottom:25px; }
 
+.hero h1 { font-size:42px; margin-bottom:15px; }
+.hero p { font-size:20px; margin-bottom:20px; }
+
+/* BOTÓN */
 .btn {
-  background:#25D366; color:white;
+  display:inline-block;
+  background:#25D366;
+  color:white;
   padding:15px 30px;
   border-radius:30px;
-  text-decoration:none;
   font-weight:600;
+  transition:0.3s;
 }
-.btn:hover { background:#1ebe5d; }
 
-section { padding:60px 20px; text-align:center; }
-h2 { font-size:32px; margin-bottom:40px; }
+.btn:hover {
+  background:#1ebe5d;
+  transform:scale(1.05);
+}
 
+/* SECCIONES */
+section {
+  padding:60px 20px;
+  text-align:center;
+}
+
+h2 {
+  font-size:32px;
+  margin-bottom:40px;
+}
+
+/* GRID */
 .grid {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:20px;
+  gap:25px;
   max-width:1100px;
   margin:auto;
 }
 
+/* CARD */
 .card {
   background:#fff;
   border-radius:15px;
   overflow:hidden;
   box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
-.card img { width:100%; height:200px; object-fit:cover; }
+/* 🔥 HOVER PREMIUM */
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
 
-.card-content { padding:20px; }
+/* EFECTO IMAGEN */
+.card img {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  transition:0.4s;
+}
 
-.price { font-size:20px; color:#e63946; margin:10px 0; font-weight:700; }
+.card:hover img {
+  transform: scale(1.1);
+}
 
-footer { background:#111; color:#fff; padding:30px; }
+/* CONTENIDO */
+.card-content {
+  padding:20px;
+}
 
+.price {
+  font-size:20px;
+  color:#e63946;
+  margin:10px 0;
+  font-weight:700;
+}
+
+/* LINK DETALLES */
+.details-link {
+  display:block;
+  margin-top:15px;
+  color:#0077cc;
+  font-weight:500;
+}
+
+/* WHATSAPP FLOAT */
 .whatsapp-float {
-  position:fixed; bottom:20px; right:20px;
-  background:#25D366; color:white;
-  padding:15px; border-radius:50%;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
   font-size:22px;
 }
+
+/* FOOTER */
+footer {
+  background:#111;
+  color:#fff;
+  padding:30px;
+}
+
 </style>
 </head>
 
@@ -81,21 +152,19 @@ footer { background:#111; color:#fff; padding:30px; }
 <!-- HERO -->
 <header class="hero">
 <div>
-<h1>Tour a Machu Picchu desde Cusco al mejor precio | Reserva por WhatsApp</h1>
 
-<p>Reserva directa por WhatsApp con operador local</p>
+<h1>Tour a Machu Picchu desde Cusco al mejor precio</h1>
 
-<p>
-✔ Grupos pequeños • ✔ Atención personalizada • ✔ Confirmación rápida
-</p>
+<p>Operador local • Grupos pequeños • Reserva inmediata</p>
 
 <a class="btn" href="https://wa.me/51913361391?text=Hola%20quiero%20información%20sobre%20los%20tours">
 🔥 Reservar por WhatsApp
 </a>
 
 <p style="margin-top:15px;">
-⚠️ Cupos limitados por día
+⚠️ Cupos limitados por día – reserva con anticipación
 </p>
+
 </div>
 </header>
 
@@ -117,10 +186,13 @@ footer { background:#111; color:#fff; padding:30px; }
 
 <div class="grid">
 
+<!-- MACHU PICCHU -->
 <div class="card">
+
 <a href="machu-picchu-tour.html">
-  <img src="images/machu-picchu-tour.jpg" alt="Tour a Machu Picchu desde Cusco" loading="lazy">
-</a>
+
+<img src="images/machu-picchu-tour.jpg" alt="Tour a Machu Picchu desde Cusco">
+
 <div class="card-content">
 <h3>Machu Picchu Full Day</h3>
 
@@ -130,20 +202,23 @@ footer { background:#111; color:#fff; padding:30px; }
 
 <p>✔ Recojo del hotel • ✔ Tren • ✔ Guía • ✔ Entradas</p>
 
+</div>
+
+</a>
+
 <a class="btn" href="https://wa.me/51913361391?text=Hola%20quiero%20el%20tour%20Machu%20Picchu%20Full%20Day">
 Consultar disponibilidad
 </a>
 
-<a href="machu-picchu-tour.html" style="display:block; margin-top:20px; color:#0077cc; font-weight:500;">
-Ver detalles del tour
-</a>
-  
-</div>
 </div>
 
+<!-- VALLE SAGRADO -->
 <div class="card">
+
 <a href="valle-sagrado-tour.html">
-<img src="images/valle-sagrado-cusco-tour.jpg" alt="Tour Valle Sagrado Cusco" loading="lazy">
+
+<img src="images/valle-sagrado-cusco-tour.jpg" alt="Tour Valle Sagrado Cusco">
+
 <div class="card-content">
 <h3>Valle Sagrado</h3>
 
@@ -153,81 +228,73 @@ Ver detalles del tour
 
 <p>✔ Transporte • ✔ Guía • ✔ Entradas</p>
 
+</div>
+
+</a>
+
 <a class="btn" href="https://wa.me/51913361391?text=Hola%20quiero%20el%20tour%20Valle%20Sagrado">
 Consultar disponibilidad
 </a>
 
-<a href="valle-sagrado-tour.html" style="display:block; margin-top:20px; color:#0077cc; font-weight:500;">
-Ver detalles del tour
-</a>  
-  
-</div>
 </div>
 
+<!-- MONTAÑA -->
 <div class="card">
-<a href="montana-7-colores-tour.html">  
-<img src="images/montana-7-colores-cusco-tour.jpg" alt="Tour Montaña de 7 Colores Cusco Vinicunca Perú" loading="lazy">
+
+<a href="montana-7-colores-tour.html">
+
+<img src="images/montana-7-colores-cusco-tour.jpg" alt="Tour Montaña de 7 Colores Cusco Vinicunca">
+
 <div class="card-content">
 <h3>Montaña de Colores</h3>
 
-<p>Una de las experiencias más impresionantes del Perú</p>
+<p>Una experiencia única en Perú</p>
 
 <div class="price">Desde $50 USD</div>
 
-<p>✔ Transporte • ✔ Guía • ✔ Desayuno y almuerzo</p>
+<p>✔ Transporte • ✔ Guía • ✔ Alimentación</p>
+
+</div>
+
+</a>
 
 <a class="btn" href="https://wa.me/51913361391?text=Hola%20quiero%20el%20tour%20Montaña%20de%20Colores">
 Consultar disponibilidad
 </a>
-  
-<a href="montana-7-colores-tour.html" style="display:block; margin-top:20px; color:#0077cc; font-weight:500;">
-Ver detalles del tour
-</a>
-  
-</div>
+
 </div>
 
 </div>
 </section>
 
+<!-- TEXTO SEO -->
 <section>
 <h2>Tour a Machu Picchu desde Cusco</h2>
 
 <p>
-Ofrecemos el mejor tour a Machu Picchu desde Cusco con todo incluido: transporte, tren, entradas y guía profesional.
-Nuestros tours en Cusco están diseñados para brindarte una experiencia segura, cómoda y personalizada.
+Ofrecemos el mejor tour a Machu Picchu desde Cusco con transporte, tren, entradas y guía profesional.
 </p>
 
 <p>
-Si buscas el mejor precio para viajar a Machu Picchu, somos una agencia local que trabaja sin intermediarios.
-Puedes reservar tu tour a Machu Picchu fácilmente por WhatsApp con atención inmediata.
+Reserva fácilmente por WhatsApp con atención inmediata y asegura tu lugar.
 </p>
-</section>
-  
-<!-- TESTIMONIOS -->
-<section>
-<h2>Opiniones de viajeros</h2>
-
-<p>"Todo estuvo perfectamente organizado, excelente servicio."</p>
-<strong>- María, Perú</strong>
-
-<p>"Una experiencia increíble, totalmente recomendado."</p>
-<strong>- Carlos, México</strong>
 </section>
 
 <!-- CTA FINAL -->
 <section>
-<h2>¿Listo para viajar a Machu Picchu?</h2>
 
-<p>Escríbenos ahora y recibe atención inmediata</p>
+<h2>¿Listo para viajar?</h2>
+
+<p>Escríbenos ahora y asegura tu reserva</p>
 
 <a class="btn" href="https://wa.me/51913361391?text=Hola%20quiero%20reservar%20un%20tour">
 Reservar ahora
 </a>
+
 </section>
 
 <footer>
-<p>© 2026 Machupicchu Cumorah E.I.R.L. • Operador turístico • RUC: 20611205172</p>
+<p>© 2026 Machupicchu Cumorah E.I.R.L. • RUC: 20611205172</p>
 </footer>
 
 <a href="https://wa.me/51913361391?text=Hola%20quiero%20información" class="whatsapp-float">
