@@ -17,6 +17,43 @@
 
 <style>
 
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* móvil */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(0,0,0,0.95);
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 15px 0;
+    font-size: 18px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+  
 html {
   scroll-behavior: smooth;
 }  
@@ -249,7 +286,11 @@ header {
       Machupicchu Cumorah
     </div>
 
-    <nav class="nav-links">
+<div class="menu-toggle" onclick="toggleMenu()">
+  ☰
+</div>
+
+   <nav class="nav-links" id="menu">
       <a href="index.html">Inicio</a>
       <a href="index.html#tours">Tours</a>
       <a href="nosotros.html">Nosotros</a>
@@ -628,6 +669,12 @@ window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
 
 </script>
+
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>  
   
 </body>
 </html>
