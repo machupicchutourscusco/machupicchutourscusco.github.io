@@ -25,7 +25,18 @@ html {
   scroll-margin-top: 100px;
 }
   
-body {
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+  
+  body {
   margin:0;
   font-family:'Poppins',sans-serif;
   background:#f8f9fa;
@@ -273,7 +284,7 @@ header {
 </section>
 
 <!-- CONFIANZA -->
-<section>
+<section class="reveal">
 <h2>¿Por qué elegirnos?</h2>
 
 <p>✔ Operador turístico autorizado en Perú</p>
@@ -284,14 +295,14 @@ header {
 </section>
 
 <!-- TOURS -->
-<section id="tours">
+<section id="tours" class="reveal">
 
 <h2>Tours en Cusco y Machu Picchu</h2>
 
 <div class="grid">
 
 <!-- MACHU PICCHU -->
-<div class="card">
+<div class="card reveal">
 
 <a href="machu-picchu-cusco-tour.html">
 
@@ -599,5 +610,22 @@ Ofrecemos tours económicos, completos y con atención inmediata.
 💬
 </a>
 
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+  reveals.forEach(el => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+</script>
+  
 </body>
 </html>
