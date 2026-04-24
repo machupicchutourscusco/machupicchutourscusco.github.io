@@ -693,6 +693,19 @@ document.querySelectorAll("#menu a").forEach(link => {
   });
 });
 </script>  
+
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+
+// 🔥 Cerrar menú al hacer clic en un enlace
+document.querySelectorAll("#menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("menu").classList.remove("active");
+  });
+});
+</script>
   
 </body>
 </html>
