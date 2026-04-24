@@ -680,6 +680,19 @@ function toggleMenu() {
   document.getElementById("menu").classList.toggle("active");
 }
 </script>  
+
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+
+// 🔥 cerrar menú al hacer click
+document.querySelectorAll("#menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("menu").classList.remove("active");
+  });
+});
+</script>  
   
 </body>
 </html>
