@@ -32,20 +32,26 @@
     display: block;
   }
 
-  .nav-links {
+  header .nav-links {
     position: absolute;
     top: 70px;
     right: 0;
     background: rgba(0,0,0,0.95);
     width: 100%;
     flex-direction: column;
-
-    /* 🔥 IMPORTANTE */
-    display: none !important;
+    display: none;
+    text-align: center;
+    padding: 20px 0;
   }
 
-  .nav-links.active {
-    display: flex !important;
+  header .nav-links a {
+    display: block;
+    margin: 15px 0;
+    font-size: 18px;
+  }
+
+  header .nav-links.active {
+    display: flex;
   }
 
 }
