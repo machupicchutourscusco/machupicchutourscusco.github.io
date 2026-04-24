@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Preguntas Frecuentes | Tours en Cusco y Machu Picchu</title>
+
+<meta name="description" content="Resuelve tus dudas sobre tours a Machu Picchu, precios, reservas y viajes en Cusco. Atención rápida por WhatsApp.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body { font-family:'Poppins',sans-serif; margin:0; background:#f8f9fa; color:#333; }
+
+/* NAV */
+nav {
+  background:#111;
+  padding:15px;
+  text-align:center;
+}
+nav a {
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+}
+nav a:hover {
+  color:#25D366;
+}
+
+/* HERO */
+.hero {
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),
+  url('images/machu-picchu-tour.jpg') center/cover;
+  color:white;
+  padding:80px 20px;
+  text-align:center;
+}
+
+.section {
+  max-width:900px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+.box {
+  background:#fff;
+  padding:20px;
+  border-radius:15px;
+  margin-bottom:15px;
+  cursor:pointer;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.question {
+  font-weight:600;
+}
+
+.answer {
+  display:none;
+  margin-top:10px;
+}
+
+.box.active .answer {
+  display:block;
+}
+
+/* BOTON */
+.btn {
+  display:inline-block;
+  background:#25D366;
+  color:white;
+  padding:15px 25px;
+  border-radius:30px;
+  text-decoration:none;
+  margin-top:20px;
+}
+
+footer {
+  background:#111;
+  color:#fff;
+  text-align:center;
+  padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="index.html#tours">Tours</a>
+  <a href="nosotros-agencia-cusco.html">Nosotros</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+<h1>Preguntas Frecuentes</h1>
+<p>Resolvemos tus dudas antes de reservar</p>
+</header>
+
+<!-- FAQ -->
+<section class="section">
+
+<div class="box">
+<div class="question">¿Cuánto cuesta un tour a Machu Picchu?</div>
+<div class="answer">
+El precio inicia desde $250 USD dependiendo del tipo de tren, disponibilidad y temporada.
+</div>
+</div>
+
+<div class="box">
+<div class="question">¿Es seguro reservar por WhatsApp?</div>
+<div class="answer">
+Sí, somos operador turístico local en Cusco con atención directa y rápida.
+</div>
+</div>
+
+<div class="box">
+<div class="question">¿Con cuánta anticipación debo reservar?</div>
+<div class="answer">
+Recomendamos reservar con al menos 1 semana de anticipación para asegurar disponibilidad.
+</div>
+</div>
+
+<div class="box">
+<div class="question">¿Qué incluye un tour a Machu Picchu?</div>
+<div class="answer">
+Incluye transporte, tren, entradas y guía profesional.
+</div>
+</div>
+
+<div class="box">
+<div class="question">¿Puedo pagar al llegar a Cusco?</div>
+<div class="answer">
+Sí, también ofrecemos opciones de pago parcial y coordinación directa por WhatsApp.
+</div>
+</div>
+
+<div class="box">
+<div class="question">¿Qué ropa debo llevar para los tours?</div>
+<div class="answer">
+Recomendamos ropa cómoda, abrigo ligero, zapatillas y protección solar.
+</div>
+</div>
+
+</section>
+
+<!-- CTA -->
+<section class="section" style="text-align:center;">
+
+<h2>¿Listo para reservar?</h2>
+
+<a class="btn" href="https://wa.me/51913361391?text=Hola%20quiero%20información">
+Escribir por WhatsApp
+</a>
+
+</section>
+
+<footer>
+<p>© 2026 Machupicchu Cumorah E.I.R.L.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.box').forEach(box => {
+  box.addEventListener('click', () => {
+    box.classList.toggle('active');
+  });
+});
+</script>
+
+</body>
+</html>
