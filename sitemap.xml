@@ -1,1 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- HOME -->
+  <url>
+    <loc>https://machupicchutourscusco.github.io/</loc>
+  </url>
+
+  <url>
+    <loc>https://machupicchutourscusco.github.io/en/</loc>
+  </url>
+
+  <!-- TOURS PRINCIPALES -->
+  <url>
+    <loc>https://machupicchutourscusco.github.io/machu-picchu-cusco-tour.html</loc>
+  </url>
+
+  <url>
+    <loc>https://machupicchutourscusco.github.io/en/machu-picchu-tour.html</loc>
+  </url>
+
+  <!-- TOURS ESPAÑOL -->
+  <url>
+    <loc>https://machupicchutourscusco.github.io/valle-sagrado-cusco-tour.html</loc>
+  </url>
+
+  <url>
+    <loc>https://machupicchutourscusco.github.io/montana-7-colores-cusco-tour.html</loc>
+  </url>
+
+  <url>
+    <loc>https://machupicchutourscusco.github.io/laguna-humantay-cusco-tour.html</loc>
+  </url>
+
+  <url>
+    <loc>https://machupicchutourscusco.github.io/lagunas-ausangate-cusco-tour.html</loc>
+  </url>
+
+  <url>
+    <loc>https://machupicchutourscusco.github.io/camino-inca-machu-picchu-tour.html</loc>
+  </url>
+
+  <url>
+    <loc>https://machupicchutourscusco.github.io/salkantay-machu-picchu-tour.html</loc>
+  </url>
+
+  <url>
+    <loc>https://machupicchutourscusco.github.io/tour-ciudad-cusco.html</loc>
+  </url>
+
+  <url>
+    <loc>https://machupicchutourscusco.github.io/maras-moray-cusco-tour.html</loc>
+  </url>
+
+  <url>
+    <loc>https://machupicchutourscusco.github.io/valle-sur-cusco-tour.html</loc>
+  </url>
+
+  <!-- PÁGINAS INSTITUCIONALES -->
+  <url>
+    <loc>https://machupicchutourscusco.github.io/contacto.html</loc>
+  </url>
+
+  <url>
+    <loc>https://machupicchutourscusco.github.io/faq.html</loc>
+  </url>
+
+  <url>
+    <loc>https://machupicchutourscusco.github.io/nosotros-agencia-cusco.html</loc>
+  </url>
+
+</urlset>
