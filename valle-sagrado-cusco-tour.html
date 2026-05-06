@@ -74,10 +74,9 @@ body { font-family:'Poppins',sans-serif; margin:0; background:#f8f9fa; color:#33
   margin-top:15px;
 }
 
-/* ===== CARRUSEL LUJO RESPONSIVE ===== */
+/* CARRUSEL */
 .carousel {
   position: relative;
-  aspect-ratio: 16 / 9;   /* 🔥 clave */
   overflow: hidden;
   border-radius: 15px;
 }
@@ -89,19 +88,9 @@ body { font-family:'Poppins',sans-serif; margin:0; background:#f8f9fa; color:#33
 
 .carousel img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
   flex-shrink: 0;
 }
 
-/* Desktop grande */
-@media (min-width: 1024px) {
-  .carousel {
-    max-height: 450px;
-  }
-}
-
-/* BOTONES */
 .carousel button {
   position: absolute;
   top: 50%;
@@ -110,16 +99,23 @@ body { font-family:'Poppins',sans-serif; margin:0; background:#f8f9fa; color:#33
   color: white;
   border: none;
   font-size: 22px;
-  padding: 10px 14px;
+  padding: 10px;
   cursor: pointer;
   border-radius: 50%;
-  transition: 0.3s;
 }
 
-.carousel button:hover {
-  background: rgba(0,0,0,0.7);
+.carousel img {
+  width: 100%;
+  height: 500px;   /* 👈 ajusta este valor */
+  object-fit: cover;
 }
 
+ @media (max-width: 768px) {
+  .carousel img {
+    height: 450px;
+  }
+} 
+  
 .prev { left: 10px; }
 .next { right: 10px; }
 
