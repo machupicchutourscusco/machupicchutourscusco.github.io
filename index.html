@@ -270,6 +270,79 @@ header {
   color: #25D366;
 }
 
+/* DROPDOWN TOURS */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: rgba(0,0,0,0.96);
+  min-width: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  color: white;
+  padding: 14px 18px;
+  display: block;
+  transition: 0.3s;
+  text-align: left;
+  margin: 0;
+  font-size: 15px;
+}
+
+.dropdown-menu a:hover {
+  background: #25D366;
+  color: white;
+  padding-left: 24px;
+}
+
+/* mostrar al pasar mouse */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* móvil */
+@media (max-width:768px){
+
+  .dropdown-menu {
+    position: static;
+    background: rgba(255,255,255,0.05);
+    box-shadow: none;
+    border-radius: 0;
+    min-width: 100%;
+  }
+
+  .dropdown-menu a {
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .dropdown-menu a:hover {
+    padding-left: 12px;
+  }
+
+}
+  
 .cta-btn {
   background: #25D366;
   color: white;
@@ -304,7 +377,54 @@ header {
 
    <nav class="nav-links" id="menu">
       <a href="index.html">Inicio</a>
-      <a href="index.html#tours">Tours</a>
+      <!-- TOURS DROPDOWN -->
+<div class="dropdown">
+  <a href="index.html#tours">Tours ▾</a>
+
+  <div class="dropdown-menu">
+
+    <a href="machu-picchu-cusco-tour.html">
+      Machu Picchu Full Day
+    </a>
+
+    <a href="valle-sagrado-cusco-tour.html">
+      Valle Sagrado
+    </a>
+
+    <a href="montana-7-colores-cusco-tour.html">
+      Montaña de Colores
+    </a>
+
+    <a href="laguna-humantay-cusco-tour.html">
+      Laguna Humantay
+    </a>
+
+    <a href="lagunas-ausangate-cusco-tour.html">
+      7 Lagunas de Ausangate
+    </a>
+
+    <a href="camino-inca-machu-picchu-tour.html">
+      Camino Inca a Machu Picchu
+    </a>
+
+    <a href="tour-ciudad-cusco.html">
+      City Tour Cusco
+    </a>
+
+    <a href="maras-moray-cusco-tour.html">
+      Maras, Moray y Salineras
+    </a>
+
+    <a href="valle-sur-cusco-tour.html">
+      Valle Sur Cusco
+    </a>
+
+    <a href="salkantay-machu-picchu-tour.html">
+      Salkantay Trek a Machu Picchu
+    </a>
+
+  </div>
+</div>
       <a href="nosotros-agencia-cusco.html">Nosotros</a>
       <a href="faq.html">FAQ</a>
       <a href="contacto.html">Contacto</a>
