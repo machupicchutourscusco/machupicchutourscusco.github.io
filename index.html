@@ -272,10 +272,6 @@ header {
 
 /* DROPDOWN TOURS */
 
-.dropdown {
-  position: relative;
-}
-
 .dropdown > a {
   color: white;
   margin: 0 12px;
@@ -321,8 +317,12 @@ header {
 }
 
 /* mostrar al pasar mouse */
-.dropdown:hover .dropdown-menu {
-  display: flex;
+@media (min-width:769px){
+
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+
 }
 
 /* móvil */
