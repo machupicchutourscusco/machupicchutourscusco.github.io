@@ -829,16 +829,27 @@ revealOnScroll();
 </script>
 
 <script>
+
 function toggleMenu() {
   document.getElementById("menu").classList.toggle("active");
 }
 
-// 🔥 Cerrar menú al hacer clic en un enlace
+// cerrar menú SOLO en links normales
 document.querySelectorAll("#menu a").forEach(link => {
+
   link.addEventListener("click", () => {
+
+    // NO cerrar si es el botón Tours
+    if(link.classList.contains("dropdown-toggle")) {
+      return;
+    }
+
     document.getElementById("menu").classList.remove("active");
+
   });
+
 });
+
 </script>
 
 <script>
