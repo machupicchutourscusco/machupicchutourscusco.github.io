@@ -362,7 +362,20 @@ header {
   background: #1ebe5d;
   transform: scale(1.05);
 }
- 
+
+/* móvil dropdown click */
+@media (max-width:768px){
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: flex;
+  }
+
+}
+  
 </style>
 <link rel="icon" type="image/png" href="/images/favicon.png">  
 </head>
@@ -384,7 +397,10 @@ header {
       <a href="index.html">Inicio</a>
       <!-- TOURS DROPDOWN -->
 <div class="dropdown">
-  <a href="index.html#tours">Tours ▾</a>
+
+  <a href="javascript:void(0);" class="dropdown-toggle">
+    Tours ▾
+  </a>
 
   <div class="dropdown-menu">
 
@@ -824,6 +840,25 @@ document.querySelectorAll("#menu a").forEach(link => {
   });
 });
 </script>
+
+<script>
+
+// dropdown tours móvil
+document.querySelector(".dropdown-toggle").addEventListener("click", function(e) {
+
+  // solo móvil
+  if (window.innerWidth <= 768) {
+
+    e.preventDefault();
+
+    document
+      .querySelector(".dropdown")
+      .classList.toggle("open");
+  }
+
+});
+
+</script>  
   
 </body>
 </html>
