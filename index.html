@@ -38,17 +38,20 @@
     display: block;
   }
 
-  header .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: rgba(0,0,0,0.95);
-    width: 100%;
-    flex-direction: column;
-    display: none;
-    text-align: center;
-    padding: 20px 0;
-  }
+ header .nav-links {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background: rgba(0,0,0,0.95);
+  width: 100%;
+  flex-direction: column;
+  display: none;
+  text-align: center;
+  padding: 20px 0;
+
+  max-height: calc(100vh - 70px);
+  overflow-y: auto;
+}
 
   header .nav-links a {
     display: block;
